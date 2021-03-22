@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+}
+
+body{
+    max-width: 1400px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root{
+
+    /* colors */
+    --nav-footer-bg: black;
+    --bg-color-1: #F6F6F6;
+
+    /* font variables */
+    --pc-nav-text-font-size: 14px;
+    --pc-hero-main-text-size: 48px;
+    --pc-hero-description-size: 18px;
+
+    --pc-section-headers: 36px;
+    --mobile-section-headers: 24px;
+ 
+    --mobile-hero-main-text-size: 24px;
+    --mobile-hero-description-size: 14px;
+
+    /* button sizes */
+    --pc-cta-btn-width: 236px;
+    --pc-cta-btn-height: 50px;
+
+    /*services box dimensions*/
+    --services-box-width:488px;
+    --services-box-height:328px;
+
+    --mobile-services-box-width:335px;
+    --mobile-services-box-height:225px;
+}
+
+nav{
+    padding-left: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 205px;
+
+    background-color: var(--nav-footer-bg);
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+        nav ul li{
+            font-size: var(--pc-nav-text-font-size);
+            padding-left: 49px;
+        }
+
+        .fas.fa-bars{
+            display: none;
+        }
+
+        /* Responsive Nav */
+
+@media screen and (max-width:600px){
+    nav{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+        nav img{
+            width: 110px;
+            height: 40px;
+        }
+        nav ul{
+            display: none;
+        }
+        
+        .fas.fa-bars{
+            display: inline-block;
+        }
+}
+
+
+
+
+
+/* Hero Section  */
+.hero{
+    display: flex;
+    flex-direction: row;
+}
+
+    .hero .hero-text{
+        width: 50%;
+        height: 495px;
+        padding-left: 120px;
+        padding-top: 145px;
+        padding-right: 80px;
+        background-color: var(--bg-color-1);
+    }
+        .hero .hero-text .company-name{
+            font-size: var(--pc-hero-main-text-size);
+            font-weight: bold;
+        }
+
+        .hero .hero-text .company-decrp{
+            font-size: var(--pc-hero-description-size);
+            line-height: 30px;
+        }
+    .hero .hero-img{
+        background-image: url(./assets/Images/homepage-img/hero-img-solar.png);
+        width: 50%;
+        
+    }
+
+/* Responsive Hero - Section  */
+@media screen and (max-width:600px){
+    .hero{
+        flex-direction: column-reverse;
+    }
+    
+    .hero .hero-img{
+        width: 100vw;
+        height: 500px;
+        background-repeat: no-repeat;
+        z-index: -1;
+        
+    }
+
+    .hero .hero-text{
+        width: 100vw;
+        margin-top:-400px;
+        background-color: transparent;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 165px;
+        
+    }
+
+        .hero .hero-text .company-name{
+            font-size: var(--mobile-hero-main-text-size);
+            font-weight: bold;
+            color: white;
+        }
+
+        .hero .hero-text .company-decrp{
+            font-size: var(--mobile-hero-description-size);
+            line-height: 30px;
+            color: white;
+            font-weight: normal;
+
+        }
+        
+        
+    }
+    
+
+
+/* Services Section */
+
+.services{
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.services-header{
+    font-size: var(--pc-section-headers);
+}
+
+.services-cards-container{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    /* padding: 0 auto; */
+    justify-content:space-around;
+}
+
+.services-cards-container .services-cards{
+        width: var(--services-box-width);
+        height: var(--services-box-height);
+        /* background-color: red; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+        .services-cards p{
+            font-size: 24px;
+            color: white;
+        }
+        
+        .services-cards button{
+            margin-top: 24px;
+            width: var(--pc-cta-btn-width);
+            height: var(--pc-cta-btn-height);
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+
+        .services-card-1{
+            margin-right: 16px;
+            background-image: url(./assets/Images/homepage-img/A111-removebg-preview\ 1.png);
+            
+        }
+
+        .services-card-2{
+            background-image: url(./assets/Images/homepage-img/serices-solar.png);
+        }
+
+/* mobile version of services */
+@media screen and (max-width:600px){
+    .services{
+        margin-top: 0px;
+    }
+    .services-header{
+        font-size: var(--mobile-section-headers);
+    }
+
+    .services-cards-container{
+        display: flex;
+        flex-direction: column;
+        /* padding: 0 auto; */
+        justify-content:space-around;
+        /* border: 1px solid red; */
+    }
+
+    .services-cards-container .services-cards{
+        width: 100%;
+        /* width: var(--mobile-services-box-width); */
+        height: var(--mobile-services-box-height);
+        margin-right: 0px;
+                
+    }
+
+    .services-card-2{
+        margin-top: 24px;
+    }
+
+    .services-cards p{
+        font-size: 18px;
+    }
+}
