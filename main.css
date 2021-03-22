@@ -333,5 +333,6 @@ nav{
         .product-descp .pdescp{
             font-size: 14px;
             margin-bottom: 24px;
+            margin-right: 0;
         }
     }
