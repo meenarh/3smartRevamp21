@@ -256,3 +256,40 @@ nav{
         font-size: 18px;
     }
 }
+
+/* Featured Product Section */
+
+.featured-product{
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 217px;
+    background-color: #F6F6F6;
+}
+.featured-product p.header{
+    font-size: var(--pc-section-headers);
+    margin-bottom: 52px;
+    
+}
+
+.single-product{
+    display: flex;
+    flex-direction: row;
+}
+    .product-img-box{
+        width: 490px;
+        height: 328px;
+        background-color:#D8DDF8;
+        border-radius: 20px;
+        border-color: 1px solid red;
+    }
+
+    .product-descp{
+        width: 508px;
+        padding-left: 100px;
+    }
+
+    .product-descp .pheader{
+        width: 508px;
+        padding-left: 100px;
+    }
+    
