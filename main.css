@@ -336,3 +336,35 @@ nav{
             margin-right: 0;
         }
     }
+
+.projects{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 100px;
+
+    text-align: center;
+}
+
+    .projects .header{
+        font-size: var(--pc-section-headers);
+        margin-bottom: 16px;
+    }
+
+    .projects .project-descp{
+        font-size: 18px;
+        color: #7C7C7C;
+        margin-bottom: 40px;
+    }
+
+    .project-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        /* margin: 10px; */
+        /* background-color: red; */
+        /* padding-bottom: 10px; */
+    }
