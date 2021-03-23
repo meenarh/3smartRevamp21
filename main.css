@@ -379,8 +379,8 @@ nav{
         .projects{
             padding-bottom: 32px;
             margin-top: 64px;
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
         }
         .projects .header{
             font-size: var(--mobile-section-headers);
@@ -397,7 +397,7 @@ nav{
             display: flex;
             /* flex-wrap: wrap; */
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             
         }
 
