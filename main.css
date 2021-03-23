@@ -459,6 +459,8 @@ nav{
             padding-right: 16px;
             padding-top: 64px;
             padding-bottom: 64px;
+            justify-content: center;
+            text-align: center;
         }
 
         .blue-box p{
@@ -466,5 +468,6 @@ nav{
             /* width: 90%; */
             font-size: 18px;
             font-weight: normal;
+            
         }
     }
