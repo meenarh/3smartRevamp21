@@ -366,7 +366,7 @@ nav{
 
     .project-gallery{
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         flex-direction: row;
         justify-content: space-between;
         /* margin: 10px; */
@@ -378,6 +378,9 @@ nav{
 
         .projects{
             padding-bottom: 32px;
+            margin-top: 64px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
         .projects .header{
             font-size: var(--mobile-section-headers);
@@ -392,7 +395,7 @@ nav{
 
         .project-gallery{
             display: flex;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             flex-direction: column;
             justify-content: space-between;
             
