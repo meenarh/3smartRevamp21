@@ -420,8 +420,9 @@ nav{
 
 /* more section */
 .more{
-    margin-top: 150px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
     .blue-box{
@@ -429,11 +430,41 @@ nav{
         color: white;
         display: flex;
         flex-direction: row;
-        width: 1200px;
+        width: 85vw;
+        border-radius: 20px;
+        padding-left: 39px;
+        padding-right: 39px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
         .blue-box p{
-            width: 75%;
-            border: 1px solid red;
+            width: 75vw;
             font-size: 32px;
         }
+
+    @media screen and (max-width:600px){
+        .more{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+
+        .blue-box{
+            flex-direction: column;
+            width: 90vw;
+            height: 300px;
+            border-radius: 6px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
+        .blue-box p{
+            
+            /* width: 90%; */
+            font-size: 18px;
+            font-weight: normal;
+        }
+    }
