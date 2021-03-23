@@ -10,7 +10,10 @@ body{
     max-width: 1400px;
     font-family: 'Noto Sans', sans-serif;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 :root{
 
     /* colors */
@@ -66,6 +69,10 @@ nav{
             padding-left: 49px;
         }
 
+        nav ul li:focus{
+            animation: pulse ;
+            padding-left: 49px;
+        }
         .fas.fa-bars{
             display: none;
         }
@@ -207,10 +214,15 @@ nav{
             margin-top: 24px;
             width: var(--pc-cta-btn-width);
             height: var(--pc-cta-btn-height);
-            background-color: orange;
+            background-color: rgb(255, 165, 0);
             color: white;
             border: none;
             border-radius: 6px;
+        }
+
+        button:focus{
+            animation: pulse 1s;
+            box-shadow: 0 0 0 2em rgba(rgb(255, 165, 0),0);
         }
 
         .services-card-1{
@@ -405,3 +417,23 @@ nav{
             margin-bottom: 20px;
         }
     }
+
+/* more section */
+.more{
+    margin-top: 150px;
+    margin: 0 auto;
+}
+
+    .blue-box{
+        background-color: #7E8FE9;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+    }
+
+        .blue-box p{
+            width: 75%;
+            border: 1px solid red;
+            font-size: 32px;
+        }
