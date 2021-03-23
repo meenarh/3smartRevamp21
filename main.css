@@ -264,6 +264,7 @@ nav{
     padding-left: 120px;
     padding-right: 217px;
     background-color: #F6F6F6;
+    padding-bottom: 62px;
 }
 .featured-product p.header{
     font-size: var(--pc-section-headers);
@@ -303,6 +304,7 @@ nav{
             padding-top: 32px;
             padding-left: 20px;
             padding-right: 20px;
+            padding: 32px;
             background-color: #F6F6F6;
         }
 
@@ -337,6 +339,8 @@ nav{
         }
     }
 
+
+/* Project showcase section */
 .projects{
     display: flex;
     flex-direction: column;
@@ -346,6 +350,7 @@ nav{
     margin-top: 100px;
 
     text-align: center;
+    padding-bottom: 63px;
 }
 
     .projects .header{
@@ -367,4 +372,33 @@ nav{
         /* margin: 10px; */
         /* background-color: red; */
         /* padding-bottom: 10px; */
+    }
+
+    @media screen and (max-width:600px){
+
+        .projects{
+            padding-bottom: 32px;
+        }
+        .projects .header{
+            font-size: var(--mobile-section-headers);
+            margin-bottom: 16px;
+        }
+
+        .projects .project-descp{
+            font-size: 14px;
+            color: #7C7C7C;
+            margin-bottom: 25px;
+        }
+
+        .project-gallery{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+
+        .project-gallery img{
+            margin-bottom: 20px;
+        }
     }
