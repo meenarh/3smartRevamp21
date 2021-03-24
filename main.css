@@ -579,4 +579,8 @@ nav{
     .footer-3 .footer-3-subheader{
         margin-bottom: 16px;
     }
+
+    .footer-3 input{
+        width: 335px;
+    }
 }
