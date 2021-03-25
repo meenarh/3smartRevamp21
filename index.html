@@ -18,17 +18,26 @@
     
     <!-- Navigation Bar Code  -->
     <nav>
-        <img src="./assets/Images/nav-footer-img/3smart_nobg_white.png" alt="3Smart Logo on NavBar">
+        <img class="nav-logo" src="./assets/Images/nav-footer-img/3smart_nobg_white.png" alt="3Smart Logo on NavBar">
 
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars" onclick="toggleNavbar()"></i>
 
-        <ul>
+        <ul class="menu">
             <a href="#"><li class="list-item">Change Overs</li></a>
             <a href="#"><li class="list-item">Solar Installations</li></a>
             <a href="#"><li class="list-item">About</li></a>
             <a href="#"><li class="list-item">Contact</li></a>
         </ul>
     </nav>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="#">ChangeOver</a></li>
+            <li><a href="#">Solar Installations</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
 
     <section class="hero">
         <div class="hero-text">
@@ -137,6 +146,8 @@
         </div>
         
     </footer>
+
+    <script src="./main.js"></script>
 
 </body>
 </html>

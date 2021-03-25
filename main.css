@@ -56,6 +56,10 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    position: fixed;
+    width: 100%;
+    
 }
 
     nav ul{
@@ -91,10 +95,32 @@ nav{
         }
         nav ul{
             display: none;
+            /* display: block; */
         }
         
         .fas.fa-bars{
             display: inline-block;
+        }
+
+        .mobile-menu{
+            background-color: black;
+            font-size: var(--pc-nav-text-font-size);
+            width: 40%;
+            
+            padding:10px 30px ;
+            position: fixed;
+            right: 0;
+            top: 50px;
+            display: none;
+        }
+
+        .mobile-menu.active{
+            display: inline-block;
+        }
+
+        .mobile-menu li{
+            margin-bottom: 10px;
+            cursor: pointer;
         }
 }
 
