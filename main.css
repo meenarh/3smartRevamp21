@@ -754,3 +754,35 @@ nav{
 
 
 }
+
+.container{
+    margin: 98px 120px 120px 120px;
+    /* border: 1px solid yellow; */
+}
+
+    .solar-hero{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .solar-text{
+        width: 50%;
+    
+    }
+
+    .solar-text h1{
+        font-size: 48px;   
+        margin-bottom: 30px;
+    }
+
+    .solar-text p{
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    .solar-hero-img{
+        background-image: url(./assets/Images/solar-img/solar-hero.png);
+        width: 50%;
+        border-radius: 20px;
+    }
