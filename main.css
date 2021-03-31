@@ -829,7 +829,7 @@ nav{
     padding-right: 120px;
 }
 
-    .benefit h1{
+    .benefit h1, .where-we-work h1{
         font-size: 36px;
         margin-bottom: 40px;
         text-align: center;
@@ -848,7 +848,7 @@ nav{
             padding-right: 20px;
         }
 
-        .benefit h1{
+        .benefit h1, .where-we-work h1{
             font-size: 24px;
             margin-top: 64px;
             margin-bottom: 33px;
@@ -859,3 +859,65 @@ nav{
         }
         
     }
+
+
+/* WHERE WE WORK SECTION */
+.where-we-work{
+    
+    margin-top: 64px;
+}
+
+.work-location{
+    padding-right: 120px;
+    padding-left: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.work-location .location{
+    width: 187px;
+    height: 187px;
+    border-radius: 93px;
+    background-color: #D8DDF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 80px;
+}
+
+.work-location .location:hover{
+    background-color: orange;
+    color: white;
+    font-size: 24px;
+}
+
+@media screen and (max-width:600px){
+
+    .where-we-work{
+        background-color: #F6F6F6;
+        margin-top: 64px;
+    }
+    .work-location{
+        padding-right: 20px;
+        padding-left: 20px;
+        
+    }
+
+    .work-location .location{
+        width: 112px;
+        height: 112px;
+        border-radius: 56px;
+        margin-right: 10px;     
+        margin-bottom: 28px;  
+    }
+
+    .location .loc-2{
+        position: relative;
+        top: 40px;
+    }
+
+    .where-we-work h1{
+        padding-top: 32px;
+    }
+}
