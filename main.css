@@ -759,8 +759,8 @@ nav{
 
 /* SOLAR INSTALLATION PAGE */
 
-.container{
-    margin: 98px 120px 120px 120px;
+.solar-hero-container{
+    margin: 30px 120px 120px 120px;
     /* border: 1px solid yellow; */
 }
 
@@ -824,4 +824,38 @@ nav{
         
     }
 
+.benefit{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+    .benefit h1{
+        font-size: 36px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-weight:normal;
+    }
     
+    .benefit p{
+        font-size: 18px;
+        color: #7C7C7C;
+    }
+
+
+    @media screen and (max-width:600px){
+        .benefit{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .benefit h1{
+            font-size: 24px;
+            margin-top: 64px;
+            margin-bottom: 33px;
+        }
+
+        .benefit p{
+            text-align: center;
+        }
+        
+    }
