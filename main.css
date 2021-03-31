@@ -82,6 +82,11 @@ nav{
             display: none;
         }
 
+.mobile-menu{
+    display: none;
+}
+
+
         /* Responsive Nav */
 
 @media screen and (max-width:600px){

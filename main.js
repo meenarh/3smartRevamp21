@@ -1,3 +1,5 @@
+// Funtion to go to home
+
 
 // Mobile navbar toggle code
 function toggleNavbar(){
