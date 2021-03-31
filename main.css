@@ -57,7 +57,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 
-    position: fixed;
+    /* position: fixed; */
     width: 100vw;
     
 }
@@ -755,6 +755,10 @@ nav{
 
 }
 
+
+
+/* SOLAR INSTALLATION PAGE */
+
 .container{
     margin: 98px 120px 120px 120px;
     /* border: 1px solid yellow; */
@@ -785,4 +789,39 @@ nav{
         background-image: url(./assets/Images/solar-img/solar-hero.png);
         width: 50%;
         border-radius: 20px;
+        background-repeat: no-repeat;
     }
+
+    @media screen and (max-width:600px){
+        .solar-hero-img{
+            display: none;
+        }
+
+        .solar-hero-container{
+            margin: 0;
+            background-image: url(./assets/Images/solar-img/mobile-solar-img.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+        }
+        .solar-text{
+            width: 100%;
+            padding: 126px 20px 44px 20px;    
+            text-align: center;
+        }
+        .solar-text h1{
+            font-size: 36px;   
+            margin-bottom: 42px;
+        }
+    
+        .solar-text p{
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: white;
+            line-height: 1.5;
+        }
+
+        
+    }
+
+    
