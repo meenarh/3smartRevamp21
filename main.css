@@ -260,12 +260,15 @@ nav{
         }
 
         .services-card-1{
+            width: 100%;
+            height: auto;
             margin-right: 16px;
             background-image: url(./assets/Images/homepage-img/A111-removebg-preview\ 1.png);
-            
         }
 
         .services-card-2{
+            width: 100%;
+            height: auto;
             background-image: url(./assets/Images/homepage-img/serices-solar.png);
         }
 
@@ -294,7 +297,18 @@ nav{
                 
     }
 
+    .services-cards{
+        width: 100%;
+    }
+
+    .services-card-1{
+        width: 100%;
+        height: auto;
+    }
+
     .services-card-2{
+        width: 100%;
+        height: auto;
         margin-top: 24px;
     }
 
