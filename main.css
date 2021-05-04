@@ -332,6 +332,10 @@ nav{
     
 }
 
+.product-img{
+    border-radius: 7px;
+}
+
 .single-product{
     display: flex;
     flex-direction: row;
@@ -345,12 +349,12 @@ nav{
     } */
 
     .product-descp{
-        width: 508px;
+        width: 500px;
         padding-left: 100px;
     }
 
     .product-descp .pheader{
-        font-size: 32px;
+        font-size: 25px;
         margin-bottom: 16px;
     }
 
@@ -380,10 +384,11 @@ nav{
         .product-img{
             content: url(./assets/Images/homepage-img/mobile-featured-product.png);
             margin-bottom: 37px;
+            border-radius: 7px;
         }
 
         .product-descp{
-            width: 353px;
+            width: 300px;
             padding-left: 0px;
         }
 
