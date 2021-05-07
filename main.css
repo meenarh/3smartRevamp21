@@ -987,3 +987,22 @@ nav{
     }
 
 }
+
+
+
+/* Product details */
+
+.product{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.product-image{
+    background-color: #EDDEF0;
+    padding: 20px;
+}
+
+.product-descr{
+    padding: 20px;
+}
