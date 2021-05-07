@@ -994,13 +994,15 @@ nav{
 
 .product{
     display: flex;
-    flex-direction: row;
     padding: 30px;
+    height: 450px;
 }
 
 .product-image{
     background-color: #EDDEF0;
     padding: 20px;
+    border-radius: 20px;
+    height: 350px;
 }
 
 .product-descr{
