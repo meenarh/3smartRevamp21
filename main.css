@@ -529,15 +529,17 @@ nav{
     /* footer styles */
 
 .footer{
-
     margin-top: 128px;
-    padding: 40px 120px 200px 120px;
+    padding: 40px 100px 200px 120px;
     background-color: black;
     color: white;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    width: 100vw;
+
 }
 
 .footer-1{
@@ -554,7 +556,7 @@ nav{
 }
 
 .footer-3{
-    max-width: 27%;
+    max-width: 30%;
 }
 .footer-1 .footer-1-descp{
     font-size: 18px;
@@ -583,9 +585,12 @@ nav{
     padding-bottom: 17px;
 }
 
+footer{
+    width: 100%;
+}
+
 @media screen and (max-width:600px){
     .footer{
-
         margin-top: 64px;
         padding: 32px 20px 20px 32px;
         background-color: black;
@@ -995,14 +1000,14 @@ nav{
 .product{
     display: flex;
     flex-direction: row;
-    padding: 10px;
     height: 450px;
+    padding: 10px;
 }
 
 .product-image{
     background-color: #D8DDF8;
-    padding: 30px;
     border-radius: 20px;
+    padding: 10px;
     height: 350px;
     width: 600px;
     margin-top: 70px;
@@ -1032,7 +1037,6 @@ nav{
 .overview{
     font-size: 5px;
     font-family: 'Noto Sans', sans-serif;
-    padding: 10px;
     margin-bottom: 3px;
 }
 
@@ -1043,7 +1047,6 @@ nav{
 
 .feature{
     margin-top: 10px;
-    padding: 10px;
 }
 
 .feat{
@@ -1069,12 +1072,13 @@ nav{
         flex-direction: column;
     }
 
-    .img{
-        margin-left: 0px;
+    .product-image img{
+        width: 95%;
     }
 
     .product-image{
-        width: 100%;
+        width: 80%;
+        padding: 10px;
     }
 
 }
@@ -1106,3 +1110,4 @@ nav{
         flex-direction: column;
     }
 }
+
