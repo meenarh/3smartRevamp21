@@ -9,6 +9,7 @@
 body{
     max-width: 100vw;
     font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -161,7 +162,9 @@ nav{
         }
     .hero .hero-img{
         background-image: url(./assets/Images/homepage-img/hero-img-solar.png);
-        width: 50%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
         
     }
 
@@ -333,7 +336,9 @@ nav{
 }
 
 .product-img{
-    border-radius: 7px;
+    border-radius: 10px;
+    height: 100%;
+    width: 70%;
 }
 
 .single-product{
