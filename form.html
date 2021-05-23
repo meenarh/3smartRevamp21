@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="assets/Ext-styles/fa-css/all.min.css">
+    
+    <script src="https://use.fontawesome.com/9e5ea821c0.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <!-- Navigation Bar Code  -->
+    <nav>
+        <img class="nav-logo" onClick="location.href='index.html'" src="./assets/Images/nav-footer-img/3smart_nobg_white.png" alt="3Smart Logo on NavBar">
+
+        <i class="fas fa-bars" onclick="toggleNavbar()"></i>
+
+        <ul class="menu">
+            <a href="changeover.html"><li class="list-item">Change Overs</li></a>
+            <a href="solar.html"><li class="list-item">Solar Installations</li></a>
+            <a href="about.html"><li class="list-item">About</li></a>
+            <a href="Contact.html"><li class="list-item">Contact</li></a>
+        </ul>
+    </nav>
+     <!-- mobile nav -->
+    <div id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="changeover.html">ChangeOver</a></li>
+            <li><a href="solar.html">Solar Installations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- NavBar ends -->
+
+    <!-- Body -->
+
+    <div class="form-body">
+    <h3 class="info">Kindly input your information</h3>
+
+    <p class="info-p">After filling the form, you will be redirected to our Paystack Page
+        where you will make payment. A mail will be sent to you afterwards
+        confirming your payment
+    </p>
+
+    <form  method="POST" action="#">
+    <div class="form">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="First name"><br>
+
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Last name"><br>
+
+        <label for="email">Email Address</label><br>
+        <input id="email" type="email" name="email" placeholder="Email address" required>
+
+        <label for="num">Phone Number</label><br>
+        <input id="num" name="num" type="number">
+
+        <label>Where are you buying our product from?*</label><br>
+  <select>
+    <option disabled selected>Select State</option>
+    <option value="Abia">Abia</option>
+    <option value="Adamawa">Adamawa</option>
+    <option value="Akwa Ibom">Akwa Ibom</option>
+    <option value="Anambra">Anambra</option>
+    <option value="Bauchi">Bauchi</option>
+    <option value="Bayelsa">Bayelsa</option>
+    <option value="Benue">Benue</option>
+    <option value="Borno">Borno</option>
+    <option value="Cross Rive">Cross River</option>
+    <option value="Delta">Delta</option>
+    <option value="Ebonyi">Ebonyi</option>
+    <option value="Edo">Edo</option>
+    <option value="Ekiti">Ekiti</option>
+    <option value="Enugu">Enugu</option>
+    <option value="FCT">Federal Capital Territory</option>
+    <option value="Gombe">Gombe</option>
+    <option value="Imo">Imo</option>
+    <option value="Jigawa">Jigawa</option>
+    <option value="Kaduna">Kaduna</option>
+    <option value="Kano">Kano</option>
+    <option value="Katsina">Katsina</option>
+    <option value="Kebbi">Kebbi</option>
+    <option value="Kogi">Kogi</option>
+    <option value="Kwara">Kwara</option>
+    <option value="Lagos">Lagos</option>
+    <option value="Nasarawa">Nasarawa</option>
+    <option value="Niger">Niger</option>
+    <option value="Ogun">Ogun</option>
+    <option value="Ondo">Ondo</option>
+    <option value="Osun">Osun</option>
+    <option value="Oyo">Oyo</option>
+    <option value="Plateau">Plateau</option>
+    <option value="Rivers">Rivers</option>
+    <option value="Sokoto">Sokoto</option>
+    <option value="Taraba">Taraba</option>
+    <option value="Yobe">Yobe</option>
+    <option value="Zamfara">Zamfara</option>
+</select>
+
+        <label for="place">Where will you be using our product?*</label><br>
+        <input id="place" name="place" type="text" required>
+
+        <label id="how">How did you hear about us?</label><br>
+        <input id="how" name="how" type="text">
+
+        <div class="chckb">
+            <input type="checkbox" id="checkbox"> <label>By submitting this, you agree to our Terms and Conditions</label>
+        </div>
+
+        <input type="submit" id="submit" value="Go to PayPal">
+    </div>
+
+    </div>
+
+</form>
+<!-- Body ends -->
+
+<!-- Footer begins -->
+    <footer class="footer">
+        <div class="footer-1">
+        <img src="./assets/Images/nav-footer-img/footer-logo.png" alt="3Smart Technology Logo">
+        <p class="footer-1-descp">
+            3smart Technologies is a leading Nigeria Technology company that is committed to 
+            providing millions of individuals and Institutes in Nigeria with reliable automatic changeover, 
+            as well as offering you  professional services, 
+            through innovative approaches in the installation of solar energy systems.</p>
+
+        <div class="social-links">
+            <i class="fab fa-2x fa-facebook"></i>
+            <i class="fab fa-2x fa-twitter"></i>
+            <i class="fab fa-2x fa-instagram"></i>
+        </div>
+        </div>
+
+        <div class="footer-2">
+            <p class="footer-2-subheader">Quick Links</p>
+
+            <ul class="footer-links">
+                <a href="changeover.html"><li>Change Overs</li> </a>
+                <a href="solar.html"><li>Solar Installations</li></a>
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Contact Us</li></a>
+                <a href="#"><li>Privacy Policy</li></a>
+            </ul>
+        </div>
+
+        <div class="footer-3">
+            <p class="footer-3-subheader">Reach out to us</p>
+
+            <input type="text" placeholder="Enter Email Address">
+        </div>
+        
+    </footer>
+
+</body>
+</html>
