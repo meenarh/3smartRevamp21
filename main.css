@@ -1138,6 +1138,8 @@ footer{
     padding-top: 20px;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    justify-content: center;
 }
 
 .form input{
@@ -1149,6 +1151,12 @@ footer{
     box-sizing: border-box;
     border-radius: 6px;
     margin-bottom: 20px;
+}
+
+input.name{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
 }
 
 select{
