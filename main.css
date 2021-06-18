@@ -1117,6 +1117,7 @@ footer{
 
 .form-body{
     padding: 30px;
+    justify-content: center;
 }
 
 .info{
@@ -1124,6 +1125,7 @@ footer{
     line-height: 44px;
     font-weight: normal;
     color: #242424;
+    text-align: center;
 }
 
 .info-p{
@@ -1132,6 +1134,7 @@ footer{
     margin-bottom: 20px;
     line-height: 19px;
     color: #707070;
+    text-align: center;
 }
 
 .form{
@@ -1140,12 +1143,14 @@ footer{
     flex-direction: column;
     margin: auto;
     justify-content: center;
+    align-items: center;
 }
 
 .form input{
     height: 50px;
     width: 500px;
     padding: 10px;
+    justify-content: center;
     background: #F3F3F3;
     border: 1px solid #707070;
     box-sizing: border-box;
@@ -1153,11 +1158,30 @@ footer{
     margin-bottom: 20px;
 }
 
+.fbody{
+    justify-content: center;
+    align-items: center;
+}
+
 input.name{
     width: 250px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
+
+.fname{
+    margin-right: 5px;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
 
 select{
     width: 500px;
@@ -1197,6 +1221,22 @@ input[type=submit]{
     width: 500px;
     background-color: #FF8019;
     color: #F3F3F3;
+}
+
+@media screen and (max-width:600px){
+    .form{
+        margin: auto;
+        padding: auto;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+    .info-p{
+        text-align: center;
+    }
+
 }
 
 

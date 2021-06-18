@@ -53,17 +53,27 @@
 
     <form  method="POST" action="#">
     <div class="form">
-        <label for="fname">First Name</label><br>
-        <input class="name" type="text" id="fname" name="firstname" placeholder="First name"><br>
 
-        <label for="lname">Last Name</label><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 fname">
+                    <label for="fname">First Name</label><br>
+                    <input class="name" type="text" id="fname" name="firstname" placeholder="First name">
+                </div>
+
+                <div class="col-sm-3 lname">
+                    <label for="lname">Last Name</label>
         <input class="name" type="text" id="lname" name="lastname" placeholder="Last name"><br>
+                </div>
+            </div>
+        </div>
 
+        <div class="fbody">
         <label for="email">Email Address</label><br>
-        <input id="email" type="email" name="email" placeholder="Email address" required>
+        <input id="email" type="email" name="email" placeholder="Email address" required><br>
 
         <label for="num">Phone Number</label><br>
-        <input id="num" name="num" type="number">
+        <input id="num" name="num" type="number"><br>
 
         <label>Where are you buying our product from?*</label><br>
   <select>
@@ -106,12 +116,12 @@
     <option value="Yobe">Yobe</option>
     <option value="Zamfara">Zamfara</option>
 </select>
-
+<br>
         <label for="place">Where will you be using our product?*</label><br>
-        <input id="place" name="place" type="text" required>
+        <input id="place" name="place" type="text" required><br>
 
         <label id="how">How did you hear about us?</label><br>
-        <input id="how" name="how" type="text">
+        <input id="how" name="how" type="text"><br>
 
         <div class="chckb">
             <input type="checkbox" id="checkbox"> <label>By submitting this, you agree to our Terms and Conditions</label>
@@ -119,6 +129,7 @@
 
         <input type="submit" id="submit" value="Go to PayPal">
     </div>
+</div>
 
     </div>
 
