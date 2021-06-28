@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>3Smart Reloaded</title>
+
+    <link rel="stylesheet" href="assets/Ext-styles/fa-css/all.min.css">
+    
+    <script src="https://use.fontawesome.com/9e5ea821c0.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <!-- Navigation Bar Code  -->
+    <nav>
+        <img class="nav-logo" onClick="location.href='index.html'" src="./assets/Images/nav-footer-img/3smart_nobg_white.png" alt="3Smart Logo on NavBar">
+
+        <i class="fas fa-bars" onclick="toggleNavbar()"></i>
+
+        <ul class="menu">
+            <a href="changeover.html"><li class="list-item">Change Overs</li></a>
+            <a href="solar.html"><li class="list-item">Solar Installations</li></a>
+            <a href="about.html"><li class="list-item">About</li></a>
+            <a href="contact.html"><li class="list-item">Contact</li></a>
+        </ul>
+    </nav>
+     <!-- mobile nav -->
+    <div id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="changeover.html">ChangeOver</a></li>
+            <li><a href="solar.html">Solar Installations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+<!-- navbar ends-->
+
+<!-- body  -->
+
+    <figure>
+        <img src="/assets/Images/contact-img/contact.png" width="100%" height="50%" alt="">
+    </figure>
+
+    <!-- <div class="image">
+
+    </div> -->
+
+    <div class="container">
+
+        <div class="row rows">
+
+        <div class="col-md-4">
+
+        <div class="info-us">
+        
+        <h6>Contact Us</h6>
+
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+       </p> 
+    </div>
+
+    <form method="POST" autocomplete="off" name="google-sheet">
+        <label for="full-name">Full Name</label><br>
+        <input type="text" name="Full Name" placeholder="   Full Name" id="full-name"><br>
+        
+        <label for="e-mail">Email Address</label><br>
+        <input type="email" name="Email" id="e-mail" placeholder="   xyz@mail.com"><br>
+
+        <label for="reach">Reason for reaching us</label><br>
+        <input type="text" name="Reach" id="reach"><br>
+        
+        <label for="message"></label>Message<br>
+        <input type="text" name="Message" id="message"><br>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    </div>
+
+    <div class="col-md-4 deets">
+        <ul>
+            <li> <b>Phone:</b> 0809 609 2333</li>
+            <li> <b>Email Address:</b> 3smartech@gmail.com</li>
+            <li> <b>Office:</b> </li>
+            <li> <b>Website:</b> www.3smartech.com</li>
+        </ul>
+
+        <ul>
+            <li> <b>Opening Hours</b></li>
+            <li>Monday: 8:00am - 7:00pm</li>
+            <li>Tuesday: 8:00am - 7:00pm</li>
+            <li>Wednesday: 8:00am - 7:00pm</li>
+            <li>Thursday: 8:00am - 7:00pm</li>
+            <li>Friday: 8:00am - 7:00pm</li>
+            <li>Saturday: 8:00am - 7:00pm</li>
+        </ul>
+
+        <h5>We cannot wait to hear from you!!!</h5>
+    </div>
+
+    </div>
+
+    </div>
+
+<script type="text/javascript">
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwffDVyIjtyTfoGeD16eAk4Y1UFBDsoSRVCQh7C-7_SvdaHsLimh39dUjE5Px4NpKc8FQ/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have successfully submitted."))
+                .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+
+
+<!-- body ends -->
+    <footer class="footer">
+        <div class="footer-1">
+        <img src="./assets/Images/nav-footer-img/footer-logo.png" alt="3Smart Technology Logo">
+        <p class="footer-1-descp">
+            3smart Technologies is a leading Nigeria Technology company that is committed to 
+            providing millions of individuals and Institutes in Nigeria with reliable automatic changeover, 
+            as well as offering you  professional services, 
+            through innovative approaches in the installation of solar energy systems.</p>
+
+        <div class="social-links">
+            <i class="fab fa-2x fa-facebook"></i>
+            <i class="fab fa-2x fa-twitter"></i>
+            <i class="fab fa-2x fa-instagram"></i>
+        </div>
+        </div>
+
+        <div class="footer-2">
+            <p class="footer-2-subheader">Quick Links</p>
+
+            <ul class="footer-links">
+                <a href="changeover.html"><li>Change Overs</li> </a>
+                <a href="solar.html"><li>Solar Installations</li></a>
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Contact Us</li></a>
+                <a href="#"><li>Privacy Policy</li></a>
+            </ul>
+        </div>
+
+        <div class="footer-3">
+            <p class="footer-3-subheader">Reach out to us</p>
+
+            <input type="text" placeholder="Enter Email Address">
+        </div>
+        
+    </footer>
+
+</body>
+</html>
