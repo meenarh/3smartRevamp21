@@ -1467,25 +1467,59 @@ input[type=submit]{
         flex-direction: row;
     }   
 
+    .row.rows{
+        flex-direction: column;
+    }
+
+    .info-us h6{
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #242424;
+    }
+
     .info-us p{
         justify-content: left;
     }
 
     .row.rows input{
         width: 430px;
-        margin-left: 35px;
         padding: 10px;
-        justify-content: center;
     }
 
-    .row.rows label{
+    .deets{
+        margin-top: 50px;
+    }
+
+    .deets h5{
         text-align: left;
-        justify-content: left;
-        align-content: flex-start;
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #2E2E2E;
     }
 
-    .col-md-4.deets{
-        top: 5000px;
+    .deets ul li{
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #707070;
+    }
+
+    .deets ul li b{
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #242424;
+
     }
     
 }
