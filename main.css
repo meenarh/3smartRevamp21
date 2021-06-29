@@ -1456,3 +1456,36 @@ input[type=submit]{
     line-height: 33px;
     color: #2E2E2E;
 }
+
+
+
+
+/* responsiveness */
+@media screen and (max-width:600px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }   
+
+    .info-us p{
+        justify-content: left;
+    }
+
+    .row.rows input{
+        width: 430px;
+        margin-left: 35px;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .row.rows label{
+        text-align: left;
+        justify-content: left;
+        align-content: flex-start;
+    }
+
+    .col-md-4.deets{
+        top: 5000px;
+    }
+    
+}
